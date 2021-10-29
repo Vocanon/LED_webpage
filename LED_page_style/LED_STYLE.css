@@ -1,0 +1,19 @@
+.headers{
+    text-align: center;
+    padding: 2em;
+
+}
+.member_photo{
+   display:inline-block;
+ 
+}
+main{
+   
+   width: 80%;
+  text-align:center;
+}
+.profiles{
+   
+   padding:1px;
+   width: 60%;
+}
