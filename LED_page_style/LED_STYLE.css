@@ -1,19 +1,23 @@
-.headers{
+.headers {
     text-align: center;
     padding: 2em;
+}
 
+.member_photo {
+    display: inline-block;
 }
-.member_photo{
-   display:inline-block;
- 
+
+main {
+    width: 80%;
+    text-align: center;
 }
-main{
-   
-   width: 80%;
-  text-align:center;
+
+.profiles {
+    padding: 1px;
+    width: 60%;
 }
-.profiles{
-   
-   padding:1px;
-   width: 60%;
+
+.Nameform {
+    text-align: center;
+    position: center;
 }
