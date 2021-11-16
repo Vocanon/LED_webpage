@@ -7,14 +7,28 @@
     display: inline-block;
 }
 
+body {
+    background-image: url('LED_images/pxfuel.com.jpg');
+}
+
 main {
-    width: 80%;
+    width: 100%;
     text-align: center;
+    border: 3px solid black;
+    border-radius: .2em;
 }
 
 .profiles {
     padding: 1px;
     width: 60%;
+}
+
+.Prog1 {
+    text-align: center;
+    position: center;
+    border: 3px solid black;
+    border-radius: .2em;
+    padding: 1em;
 }
 
 .Nameform {
