@@ -8,25 +8,27 @@
     </head>
     <body>
         <div class="headers">
-        <h1>WLC CSC_CLUB LED_BOARD_SUBMISSION_ZONE</h1><br>
+            <h1 class="titles">WLC CSC_CLUB LED_BOARD_SUBMISSION_ZONE</h1><br>
         </div>
         <main>
-            <form id= "led_form">
+            <form class= "led_form">
                 <field>
-                    <legend><h1>Please put your code below alongside your name.</h1></legend>
-                    <label for="Name">Code creator's name</label><br>
-                    <input type="text" id="Name" class="Nameform" value=""><br>
-                    <label for="CName">Program's name</label><br>
-                    <input type="text" id="CName" class="CNameform" value=""><br>
-                    <label for="Prog">Program</label><br>
+                    <div class="img-holder">
+                        <legend id="legends"><h1>Please put your code below alongside your name.</h1></legend>
+                    </div>
+                    <label for="Name" class="label">Code creator's name</label><br>
+                    <input type="text" id="Name" class="Nameform" value="" required><br>
+                     <label for="Email" class="label">Code's creator's email</label><br>
+                    <input type="email" id="Email" class="Nameform" value="" required><br>
+                    <label for="PName" class="label">Program's name</label><br>
+                    <input type="text" id="PName" class="Nameform" value="" required><br>
+                    <label for="Prog" class="label">Program</label><br>
                     <input type="file" id="Prog" class="Prog1"><br>
-                    <textarea id="descript"></textarea><br>
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset"
+                    <textarea class="descript" placeholder="You can put the description of your project here."></textarea><br>
+                    <input type="submit" value="Submit" class="submit">
+                    <input type="reset" value="Reset" class="reset">
                 </field>
             </form>
         </main>
     </body>
-    <footer>
-    </footer>
 </html>

@@ -1,26 +1,46 @@
 .headers {
     text-align: center;
-    padding: 2em;
-}
-
-.member_photo {
-    display: inline-block;
+    padding: 1.1em;
+    background-image: url('../LED_images/index.jpg');
+    color: white;
+    width: 55%;
+    margin: auto;
 }
 
 body {
-    background-image: url('LED_images/pxfuel.com.jpg');
+    background-image: url('../LED_images/pxfuel.com.jpg');
+    margin: auto
 }
 
 main {
-    width: 100%;
+    width: 60%;
     text-align: center;
     border: 3px solid black;
     border-radius: .2em;
+    margin: auto;
+    margin-top: 2em;
+    background-image: url('../LED_images/images.jpg');
+    padding: 2em;
 }
 
-.profiles {
-    padding: 1px;
-    width: 60%;
+.label {
+    font-size: 1.5em;
+    background-image: url('../LED_images/Background-Computer-Background-Image-Circuits-170533.jpg');
+    padding: 2px;
+    margin: 2em;
+    border: solid black;
+}
+
+.led_form {
+    background-image: url('../LED_images/Background-Computer-Background-Image-Circuits-170533.jpg');
+    margin: 2em;
+    padding: 2em;
+    color: white;
+}
+
+.img-holder {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../LED_images/images.jpg');
+    opacity: 0.9;
 }
 
 .Prog1 {
@@ -28,10 +48,55 @@ main {
     position: center;
     border: 3px solid black;
     border-radius: .2em;
-    padding: 1em;
+    padding: .5em;
+    background-image: url('../LED_images/index.jpg');
+    font-size: .9em;
+    margin: 1em;
+    color: white;
+}
+
+#legends {
+    color: rgb(255, 255, 255);
 }
 
 .Nameform {
     text-align: center;
     position: center;
+    font-size: 1.2em;
+    margin: .5em;
+    background-image: url('../LED_images/index.jpg');
+    color: white;
+}
+
+#Name {
+    font-size: 1.5;
+}
+
+.descript {
+    width: 50%;
+    height: 30%;
+    font-size: 1.3em;
+    font-weight: bold;
+    background-image: url('../LED_images/index.jpg');
+    color: white;
+}
+
+.reset {
+    font-size: 1em;
+    padding: .3em;
+    color: white;
+    border: 2px black solid;
+    border-radius: 1em;
+    background-color: darkred;
+    margin: .5em;
+}
+
+.submit {
+    font-size: 1em;
+    padding: .3em;
+    color: white;
+    border: 2px black solid;
+    border-radius: 1em;
+    background-color: darkgreen;
+    margin: .5em;
 }
