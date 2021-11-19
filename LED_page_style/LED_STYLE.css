@@ -2,9 +2,15 @@
     text-align: center;
     padding: 1.1em;
     background-image: url('../LED_images/index.jpg');
-    color: white;
+    color: rgb(255, 255, 255);
     width: 55%;
     margin: auto;
+    font-weight: 900;
+}
+
+.titles {
+    color: white;
+    background-color: rgba(1, 75, 17, 0.5);
 }
 
 body {
@@ -39,8 +45,16 @@ main {
 }
 
 .img-holder {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../LED_images/images.jpg');
-    opacity: 0.9;
+    background-image: url('../LED_images/images.jpg');
+    margin: 1em;
+    padding: 1em;
+}
+
+.texts {
+    color: black;
+    text-align: center;
+    margin: 1em;
+    background-color: rgba(0, 0, 0, 0.479);
 }
 
 .Prog1 {
@@ -52,11 +66,13 @@ main {
     background-image: url('../LED_images/index.jpg');
     font-size: .9em;
     margin: 1em;
-    color: white;
+    color: rgb(206, 206, 206);
 }
 
 #legends {
     color: rgb(255, 255, 255);
+    font-weight: 900;
+    padding: .2em;
 }
 
 .Nameform {
@@ -99,4 +115,8 @@ main {
     border-radius: 1em;
     background-color: darkgreen;
     margin: .5em;
+}
+
+#test {
+    background-color: white;
 }

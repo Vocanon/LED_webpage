@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="LED_page_style/LED_STYLE.css">
-        <script type="text/javascript" src="LED.js"></script><!-- This is for the javascript for the webpage. -->
+        <script type="text/javascript" src="LED_JS/LED_Page.js"></script><!-- This is for the javascript for the webpage. -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script><!-- This is for the jquery for the webpage family. -->
         <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
@@ -11,10 +11,13 @@
             <h1 class="titles">WLC CSC_CLUB LED_BOARD_SUBMISSION_ZONE</h1><br>
         </div>
         <main>
-            <form class= "led_form">
+            <form class= "led_form" id="led_f">
                 <field>
                     <div class="img-holder">
-                        <legend id="legends"><h1>Please put your code below alongside your name.</h1></legend>
+                        <div class="texts">
+                            <legend id="legends"><h1>Please put your code below alongside your name.</h1></legend>
+                        </div>
+                        
                     </div>
                     <label for="Name" class="label">Code creator's name</label><br>
                     <input type="text" id="Name" class="Nameform" value="" required><br>
@@ -24,11 +27,15 @@
                     <input type="text" id="PName" class="Nameform" value="" required><br>
                     <label for="Prog" class="label">Program</label><br>
                     <input type="file" id="Prog" class="Prog1"><br>
-                    <textarea class="descript" placeholder="You can put the description of your project here."></textarea><br>
+                    <textarea class="descript" placeholder="You can put the description of your project here." ></textarea><br>
                     <input type="submit" value="Submit" class="submit">
                     <input type="reset" value="Reset" class="reset">
+                    
                 </field>
+                <input type="button" id="testers">
             </form>
-        </main>
+            <p id="test" placeholder="temp"></p>
+        </main> 
+        
     </body>
 </html>
