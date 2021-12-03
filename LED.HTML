@@ -11,7 +11,7 @@
             <h1 class="titles">WLC CSC_CLUB LED_BOARD_SUBMISSION_ZONE</h1><br>
         </div>
         <main>
-            <form class= "led_form" id="led_f">
+            <form enctype="multipart/form-data" method="post"  class= "led_form" id="led_f" name="forms1">
                 <field>
                     <div class="img-holder">
                         <div class="texts">
@@ -20,20 +20,22 @@
                         
                     </div>
                     <label for="Name" class="label">Code creator's name</label><br>
-                    <input type="text" id="Name" class="Nameform" value="" required><br>
+                    <input type="text" id="Name" class="Nameform" value="" name="CcName" required><br>
                      <label for="Email" class="label">Code's creator's email</label><br>
                     <input type="email" id="Email" class="Nameform" value="" required><br>
                     <label for="PName" class="label">Program's name</label><br>
                     <input type="text" id="PName" class="Nameform" value="" required><br>
                     <label for="Prog" class="label">Program</label><br>
-                    <input type="file" id="Prog" class="Prog1"><br>
+                    <input type="file" id="Prog" name="Program" class="Prog1"><br>
                     <textarea class="descript" placeholder="You can put the description of your project here." ></textarea><br>
                     <input type="submit" value="Submit" class="submit">
                     <input type="reset" value="Reset" class="reset">
                     
                 </field>
-                <input type="button" id="testers">
+                
             </form>
+            <div id="tester2"></div>
+            <input type="button" id="testers">
             <p id="test" placeholder="temp"></p>
         </main> 
         

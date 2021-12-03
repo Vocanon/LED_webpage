@@ -1,40 +1,25 @@
 window.addEventListener("load", setup);
 
 function setup() {
-    document.getElementById("testers").addEventListener("click", gathers);
-    document.getElementsByTagName("form")[0].addEventListener("submit", gatherinfo);
 
-
+    document.getElementsByTagName("form")[0].addEventListener("submit", (event) => {
+        event.preventDefault();
+        gatherinfo();
+    });
 }
 
 function gatherinfo() {
-    var exporter = new FormData(document.getElementById('form'));
-    console.log(exporter + "hello");
-    var urls = "";
-
-
-
-}
-
-function gathers() {
-    var doc = new FormData(document.getElementById('led_f'))
-
+    form = document.forms.namedItem("forms1")
+    const datas = new FormData(form)
     var xml = new XMLHttpRequest();
     xml.onreadystatechange = responder;
     var name = document.getElementById("Name").value;
     var emails = document.getElementById("Email").value;
     var Programname = document.getElementById("PName").value;
-    doc.append(name);
-    doc.append(emails);
-    var file = document.getElementById("Prog").value;
-    var j = name;
-    xml.open('Post', 'http://172.16.42.116:4006/create', true);
-    xml.send(doc);
-
-
-
-    document.getElementById("test").innerHTML = file;
-    console.log(file, Programname, emails, name);
+    var jsons = JSON.stringify(datas);
+    var json = name;
+    xml.open('Post', 'http://localhost', true);
+    console.log();
 
     function responder() {
         if (xml.readyState === XMLHttpRequest.DONE) {
@@ -49,4 +34,6 @@ function gathers() {
             }
         }
     }
+
+
 }
